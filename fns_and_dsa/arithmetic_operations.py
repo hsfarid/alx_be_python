@@ -4,17 +4,30 @@
 # operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
 
 def perform_operation(num1, num2, operation):
-    match operation:
-        case "add":
-            return num1 + num2
-        case "subtract":
-            return num1 - num2
-        case "multiply":
-            return num1 * num2
-        case "divide":
-            if num2 == 0:
-                return "Cannot divide by zero."
-            else:
-                return num1 / num2
-        case _:
-            return "Enter a valid operation."
+    if "add" in operation:
+        return num1 + num2
+    elif "subtract" in operation:
+        return num1 - num2
+    elif "multiply" in operation:
+        return num1 * num2
+    elif "divide" in operation:
+        if num2 == 0:
+            return "Cannot divide by zero."
+        else:
+            return num1 / num2
+    else:
+        return "Enter a valid operation."
+    # match operation:
+    #     case "add":
+    #         return num1 + num2
+    #     case "subtract":
+    #         return num1 - num2
+    #     case "multiply":
+    #         return num1 * num2
+    #     case "divide":
+    #         if num2 == 0:
+    #             return "Cannot divide by zero."
+    #         else:
+    #             return num1 / num2
+    #     case _:
+    #         return "Enter a valid operation."
