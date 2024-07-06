@@ -19,5 +19,5 @@ match unit:
         result = convert_to_fahrenheit(temperature)
         print(f"{temperature}C is {result}F")
     case _:
-        print("Enter a valid unit.")
+        print("Invalid temperature. Please enter a numeric value.")
 
