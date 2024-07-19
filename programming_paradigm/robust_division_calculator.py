@@ -10,5 +10,8 @@ def safe_divide(numerator, denominator):
         # if type(numerator) == str or type(denominator) == str:
             return "Error: Please enter numeric values only."
 
+    except TypeError:
+         return "Error: Please enter numberic values only."
+
 
 
