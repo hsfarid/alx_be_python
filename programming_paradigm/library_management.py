@@ -24,7 +24,7 @@ class Library:
     def __init__(self):
         self.__books = []
 
-    def add_book(self, book):
+    def add_book(self):
         if isinstance(book, Book):
             self.__books.append(book)
 
