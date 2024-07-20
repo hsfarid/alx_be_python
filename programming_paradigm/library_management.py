@@ -22,11 +22,11 @@ class Book:
 
 class Library:
     def __init__(self):
-        self.__books = []
+        self._books = []
 
-    def add_book(self):
+    def add_book(self, book):
         if isinstance(book, Book):
-            self.__books.append(book)
+            self._books.append(book)
 
     def check_out_book(self, title):
         for book in self._books:
